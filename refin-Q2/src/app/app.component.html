@@ -1,0 +1,11 @@
+<h1>Categories</h1>
+<div>
+  <input type="text" placeholder="filter your categories here" [(ngModel)]='filterWord' (input)='filter()'>
+</div>
+<div>
+  <ul>
+    <tr *ngFor='let result of results'>
+      {{result}}
+    </tr>
+  </ul>
+</div>

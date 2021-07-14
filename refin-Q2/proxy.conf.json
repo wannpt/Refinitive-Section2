@@ -1,0 +1,10 @@
+{
+    "/api": {
+      "target": "https://api.publicapis.org/categories",
+      "secure": true,
+      "pathRewrite": {
+      "^/api": ""
+    },
+      "changeOrigin": true
+    }
+  }
