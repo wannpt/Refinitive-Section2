@@ -1,0 +1,14 @@
+<div class='main'>
+  <div class="col-l">
+    <input type="number" [(ngModel)]='num' (ngModelChange)='Calculate()'>
+  </div>
+  <div class="col-m">
+    <select [(ngModel)]='validateType' (ngModelChange)='Calculate()'>
+      <option value='isPrime'>isPrime</option>
+      <option value='isFibo'>isFibonacci</option>
+    </select>
+  </div>
+  <div class='col-r'>
+    <span>{{result}}</span>
+  </div>
+</div>
